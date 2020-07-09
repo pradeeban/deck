@@ -82,7 +82,7 @@ Docker image is hosted on [Docker Hub](https://hub.docker.com/r/hbagdi/deck).
 You can get the image with the command:
 
 ```
-docker pull hbagdi/deck
+docker pull pradeeban/deck
 ```
 
 ## Documentation
