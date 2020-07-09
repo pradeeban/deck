@@ -3,7 +3,7 @@
 
 ## Prepare
 
-- Create a `docs/changelog-v0.5.0` branch. Substitute v0.5.0 with the version
+- Create a `docs/changelog-v1.1.1` branch. Substitute v1.1.1 with the version
   you are releasing.
 - Write the changelog, ensure the links are all created correctly and
   make sure to write the doc with end-user in mind.
@@ -27,12 +27,12 @@
   Commit and push for the Homebrew release.
 - Docker release  
   - Run the command:
-    `docker build --build-arg TAG=v0.5.0 --build-arg COMMIT=bar -t hbagdi/deck:v0.5.0 .`.
-    Substitue `v0.5.0` with the version you are releasing and `bar` with the 
+    `docker build --build-arg TAG=v1.1.1 --build-arg COMMIT=bar -t pradeeban/deck:v1.1.1 .`.
+    Substitue `v1.1.1` with the version you are releasing and `bar` with the 
     Git short hash of the tag.
-  - Run `docker push hbagdi/deck:v0.5.0`
+  - Run `docker push pradeeban/deck:v1.1.1`
   - If needed, do the following for a new release (not for a back-ported
     patch release):
-    - Run `docker tag hbagdi/deck:v0.5.0 hbagdi/deck:latest`
-    - Run `docker push hbagdi/deck:latest`
+    - Run `docker tag pradeeban/deck:v1.1.1 pradeeban/deck:latest`
+    - Run `docker push pradeeban/deck:latest`
 
